@@ -1,0 +1,129 @@
+.i-want-yo-body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+}
+
+.single-bar-rob {
+    display:grid;
+    justify-content: center;
+    /* height: 5rem; */
+    font-family:'Amatic SC', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(216, 216, 8);
+    text-shadow: 5px 5px black;
+}
+.single-page-title{
+    margin: 0;
+    height: 10rem ;
+    margin-bottom: 5rem;
+}
+
+ .img-rob {
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    border: 2px solid rgb(216, 216, 8);
+    object-fit: cover;
+}
+.img-rob:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transfrom: scale(1.1);
+    transform: scale(1.1);
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0 0 30px black;
+
+}
+.containerRob{
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+.table-data-rob{
+    font-size: 40px;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 2px 2px black;
+   
+   
+  
+
+}
+.review {
+    
+    background-color: rgba(167, 167, 166, 0.603);
+    border-radius: 10px;
+    /* margin: 0 30px 0 30px; */
+    /* background-color: rgb(216, 216, 8); */
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    
+   
+}
+.review-name{
+    font-size: 25px;
+    padding: 0 10px 0 10px;
+    margin:  10px 10px 10px 10px;
+    /* border-color: gray; */
+    border-top:solid rgba(107, 32, 32, 0) 20px;
+    font-weight: bold;
+    color: white;
+}
+.review-rating{
+    padding: 0 10px 0 10px;
+    margin:  10px 10px 10px 10px;
+}
+
+.review-text{
+    padding: 0 10px 0 10px;
+    margin:  10px 10px 10px 10px;
+    border-bottom:solid rgba(255, 255, 255, 0) 20px;
+    border-bottom: 0;
+}
+
+.backRob {
+    font-size: 45px;
+    padding: 15px;
+    
+    color: antiquewhite;
+    
+}
+.reviewContainerBox {
+    
+    box-shadow: 0 0 50px black;
+     margin: 0 3rem 3rem 3rem
+}
+.h3-Rob {
+    font-size: 75px;
+    text-align: center;
+    font-family:'Amatic SC', cursive;
+    color: antiquewhite;
+    letter-spacing: 15px;
+    text-shadow: 5px 5px black;
+}
+
+.loaderRob {
+    display: block;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:38vh;
+    
+  
+
+    
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+

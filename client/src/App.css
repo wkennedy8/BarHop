@@ -1,0 +1,239 @@
+.h1-will {
+  margin-top: 5px;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 180px;
+  color: rgb(216, 216, 8);
+  letter-spacing: 10px;
+  user-select: none;
+  text-shadow: 10px 10px rgba(0, 0, 0.74);
+  animation: hop 1.5s ease-in-out infinite;
+}
+.h1-will > a {
+  color: rgb(216, 216, 8);
+  
+}
+.will-h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 16px;
+ 
+
+  
+}
+.will-h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: antiquewhite;
+}
+.will-h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: antiquewhite;
+
+}
+
+.barlist {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 20px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.main-result{
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.rating {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.div2{
+  text-align: center;
+}
+
+.result-images {
+  height: 200px;
+  width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: all 0.3s;
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.74);
+}
+.result-images:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.span-will {
+  color: red;
+}
+
+.input-will {
+  margin-left: 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.5s;
+}
+.input-will:hover {
+  transform: scale(1.05);
+  border: 1px solid rgb(216, 216, 8);
+}
+.input-will-2 {
+  margin-left: 10px;
+  margin-bottom: 100px;
+  width: 200px;
+  height: 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  transition: all 0.5s;
+}
+.input-will-2:hover {
+  transform: scale(1.05);
+  border: 1px solid rgb(216, 216, 8);
+}
+
+
+.sort-section{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  
+
+}
+button {
+  margin-left: 10px;
+  height: 35px;
+  width: 70px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: rgb(216, 216, 8);
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+button:hover{
+  transform: scale(1.1)
+}
+
+body {
+  background: rgb(90,128,144);
+  background: radial-gradient(circle, rgba(90,128,144,1) 0%, rgba(9,121,115,1) 49%, rgba(3,44,68,1) 100%);
+}
+
+.beer-icon {
+  margin-bottom: -15px;
+  width: 40px;
+  height: 40px;
+  animation: wave 0.8s linear infinite;
+  cursor: pointer;
+  
+}
+
+.beer-icon-list{
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  margin-bottom: -4px;
+}
+
+.loader {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  margin-left: 45%;
+  margin-bottom: 10%;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes wave {
+  0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) }
+  100% { transform: rotate(  0.0deg) }
+}
+
+@keyframes flash
+{
+    from {text-shadow: 10px 10px 5px rgba(0, 0, 0.74);}
+    to {text-shadow : none;}
+}
+#transparent-button {
+  background: transparent;
+  color: transparent;
+  border: none;
+}
+
+.highratingbutton {
+  width: 200px;
+  height: 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.74);
+}
+.lowratingbutton {
+  width: 200px;
+  height: 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.74);
+}
+
+.pricelow {
+  width: 200px;
+  height: 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.74);
+}
+
+.pricehigh {
+  width: 200px;
+  height: 50px;
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.74);
+}
+
+@keyframes hop {
+  0%, 100% {
+    transform: rotate(0deg) skew(10deg) translate(0,0);
+    text-shadow: -5px 5px 0 rgba(0,0,0,.2);
+  }
+  
+  50% {
+    transform: rotate(0deg) skew(10deg) translate(30px, -30px);
+    text-shadow: -30px 30px 0 rgba(0,0,0,.2);
+    
+  }
+}
+
+.form-div {
+  
+  margin-top: -80px;
+  height: 120px;
+}
+.Rob {
+  background-color: rgba(167, 167, 166, 0.603);
+  border-radius: 16px;
+  /* margin: 0 30px 0 30px; */
+  /* background-color: rgb(216, 216, 8); */
+  outline: none;
+  box-sizing: border-box;
+   margin-top: -5px;
+   margin-bottom: 15px;
+}
